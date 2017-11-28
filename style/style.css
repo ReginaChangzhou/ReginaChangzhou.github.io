@@ -4,7 +4,7 @@ body {
 }
 
 a{
-    color:  #6495ED;
+    color:  #000000;
 }
 
 p.alt{
@@ -29,9 +29,16 @@ h3{
     font-variant: small-caps;
 }
 
+.linkto{
+    color: gray;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #6495ED; 
+}
+
 .contacts{
-    width: 15%;
-    height: 15%;
+    width: 28px;
+    height: width;
     margin-right: 10px;
 }
 
@@ -69,8 +76,25 @@ h3{
     padding-top: 1em;
 }
 
+.project-row{
+    padding-top: 2em;
+}
+
 .news-title{
+    padding-top: 0.5em;
     color: #666;
+    padding-bottom: 1em;
+}
+
+.publication{
+    color: #6495ED;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #6495ED;
+}
+
+.other_proj_title{
+    text-align: center;
 }
 
 @media (max-width: 575px) {
