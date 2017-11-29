@@ -94,13 +94,20 @@ h3{
 }
 
 .other_proj_title{
-    padding-top: 2em;
+    padding-top: 1em;
     text-align: center;
 }
 
 .proj_img{
-    padding-top: 20px;
+    padding-top: 1em;
 }
+
+.footer {
+    left: 0;
+    padding-bottom: 5em;
+    width: 100%;
+}
+
 
 @media (max-width: 575px) {
 
