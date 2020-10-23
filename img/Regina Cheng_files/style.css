@@ -1,0 +1,140 @@
+body {
+    max-width: 950px;
+    margin: auto;
+}
+
+a{
+    color:  #000000;
+}
+
+p.alt{
+    padding-top: 3px;
+    font-size: 0.8em;
+    color: #999;
+    text-align: right;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #999;
+}
+
+h3{
+    font-size: 1em;
+    font-variant: small-caps;
+}
+
+.linkto{
+    color: gray;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #6495ED; 
+}
+
+.contacts{
+    width: 28px;
+    height: width;
+    margin-right: 10px;
+}
+
+.project{
+    padding-top: 1.2em;
+}
+
+.cv-header{
+    margin-bottom: 40px;
+}
+
+.cond-right{
+    text-align: right;
+}
+
+.cv-section{
+    margin-top: 32px;
+}
+
+.nav a{
+    font-size: 1em;
+    color: #666;
+}
+
+.nav a:hover, a.active{
+    color:  #6495ED;
+}
+
+.news-date{
+    text-align: right;
+    color: #666;
+}
+
+.news-row{
+    padding-top: 1em;
+}
+
+.project-row{
+    padding-top: 2em;
+}
+
+.news-title{
+    padding-top: 0.5em;
+    color: #666;
+    padding-bottom: 1em;
+}
+
+.publication{
+    color: #6495ED;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #6495ED;
+}
+
+.other_proj_title{
+    padding-top: 1em;
+    text-align: center;
+}
+
+.proj_img{
+    padding-top: 1em;
+}
+
+.footer {
+    left: 0;
+    padding-bottom: 5em;
+    width: 100%;
+}
+
+
+@media (max-width: 575px) {
+
+    img{
+        padding-bottom: 10px;
+    }
+
+    h2{
+        text-align: left;
+    }
+
+    p.alt{
+        text-align: left;
+        margin-bottom: 0px;
+    }
+
+    .cond-right{
+        text-align: left;
+    }
+
+
+    .news-date{
+        text-align: left;
+    }
+
+    .cond-right{
+        text-align: left;
+    }
+
+}
