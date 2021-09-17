@@ -1,11 +1,17 @@
 body {
     max-width: 950px;
     margin: auto;
+    font-family: "Verdana";
+    color: #262421;
 }
 
 a{
-    color:  #000000;
+    color:  #262421;
     text-decoration: none;
+}
+
+p {
+    font-size: 0.85em;
 }
 
 p.alt{
@@ -30,6 +36,30 @@ h3{
     font-variant: small-caps;
 }
 
+h5{
+    font-size: 1em;
+    font-variant: small-caps;
+}
+
+hr {
+    color: #edb264;
+    border: solid 0.65px !important;
+    height: 0px !important;
+    width: 25%;
+}
+
+
+.name{
+    font-size: 1.4em;
+    font-variant: small-caps;
+    font-family: "Verdana";
+}
+
+.icon_row{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
 .linkto{
     color: gray;
     text-decoration: underline;
@@ -38,9 +68,20 @@ h3{
 }
 
 .contacts{
-    width: 28px;
+    width: 100%;
     height: width;
     margin-right: 10px;
+    text-decoration: none;
+}
+
+.top-section{
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.section{
+    padding-top: 1em;
+    padding-bottom: 2em;
 }
 
 .project{
@@ -59,13 +100,28 @@ h3{
     margin-top: 32px;
 }
 
-.nav a{
+
+.nav{
     font-size: 1em;
-    color: #666;
+    width: 100%;
+    max-width: 950px;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    background-color: rgba(255,255,255,1)!important;
+    border-bottom: dotted 1.3px #6495ED !important;
+    z-index:999;
 }
 
-.nav a:hover, a.active{
-    color:  #6495ED;
+.nav-link{
+    background-color: rgba(255,255,255,1)!important;
+    color: gray;
+}
+
+
+a:hover, a.active{
+    color:  #edb264;
+    text-decoration: none;
 }
 
 .news-date{
@@ -79,12 +135,11 @@ h3{
 
 .project-row{
     padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .news-title{
-    padding-top: 0.5em;
-    color: #666;
-    padding-bottom: 1em;
+    font-size: 1em;
 }
 
 .publication{
@@ -105,11 +160,22 @@ h3{
 
 .footer {
     left: 0;
-    padding-top: 5em;
+    padding-top: 1em;
     padding-bottom: 5em;
     width: 100%;
     color: gray;
     text-align: center;
+    font-size: 0.7em;
+}
+
+.profile_img{
+    width: 60%;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+
 }
 
 
