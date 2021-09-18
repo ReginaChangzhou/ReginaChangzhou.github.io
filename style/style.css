@@ -41,11 +41,18 @@ h5{
     font-variant: small-caps;
 }
 
-hr {
+hr.bottom_line {
     color: #edb264;
     border: solid 0.65px !important;
     height: 0px !important;
-    width: 25%;
+    width: 30%;
+}
+
+hr.div_line {
+    color: #edb264;
+    border: solid 0.65px !important;
+    height: 0px !important;
+    width: 10%;
 }
 
 
@@ -64,7 +71,7 @@ hr {
     color: gray;
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-decoration-color: #6495ED; 
+    text-decoration-color: #edb264; 
 }
 
 .contacts{
@@ -109,7 +116,7 @@ hr {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     background-color: rgba(255,255,255,1)!important;
-    border-bottom: dotted 1.3px #6495ED !important;
+    border-bottom: dotted 1.3px #edb264 !important;
     z-index:999;
 }
 
@@ -140,6 +147,8 @@ a:hover, a.active{
 
 .news-title{
     font-size: 1em;
+    color: gray;
+    padding-left: 1em;
 }
 
 .publication{
@@ -155,7 +164,9 @@ a:hover, a.active{
 }
 
 .proj_img{
+    margin: auto;
     padding-top: 1em;
+    width: 100%;
 }
 
 .footer {
@@ -176,6 +187,13 @@ a:hover, a.active{
     margin-right: auto;
     border-radius: 50%;
 
+}
+
+.project_hashtag{
+    font-size: 0.9em;
+    color: #edb264;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 
