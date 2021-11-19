@@ -181,8 +181,8 @@ a:hover, a.active{
 
 .profile_img{
     width: 60%;
-    padding-top: 2em;
-    padding-bottom: 3em;
+    margin-top: 0em;
+    margin-bottom: 3em;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
