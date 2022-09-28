@@ -11,7 +11,7 @@ a{
 }
 
 p {
-    font-size: 9pt;
+    font-size: 9.5pt;
 }
 
 p.alt{
@@ -38,7 +38,7 @@ h3{
 
 h5{
     font-size: 1em;
-    font-variant: small-caps;
+    /*font-variant: small-caps;*/
 }
 
 hr.bottom_line {
@@ -58,12 +58,11 @@ hr.div_line {
 
 .name{
     font-size: 1.4em;
-    font-variant: small-caps;
     font-family: "Verdana";
 }
 
 .icon_row{
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 0.5em;
 }
 
@@ -197,9 +196,9 @@ a:hover, a.active{
 }
 
 .profile_img{
-    width: 60%;
+    width: 50%;
     margin-top: 0em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
