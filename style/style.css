@@ -11,7 +11,7 @@ a{
 }
 
 p {
-    font-size: 0.85em;
+    font-size: 9pt;
 }
 
 p.alt{
@@ -67,6 +67,11 @@ hr.div_line {
     padding-bottom: 0.5em;
 }
 
+.icon_list{
+    font-size: 9pt;
+    text-align: right;
+}
+
 .linkto{
     color: gray;
     text-decoration: underline;
@@ -107,6 +112,10 @@ hr.div_line {
     margin-top: 32px;
 }
 
+.paper_section{
+    margin-bottom: 2em;
+}
+
 
 .nav{
     font-size: 1em;
@@ -145,17 +154,25 @@ a:hover, a.active{
     padding-bottom: 2em;
 }
 
+.paper-row{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+
 .news-title{
     font-size: 1em;
     color: gray;
     padding-left: 1em;
 }
 
-.publication{
-    color: #6495ED;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-color: #6495ED;
+.paper_section_title{
+    font-size: 9pt;
+    color: gray;
+}
+
+#publication-list p{
+    margin-bottom: 0.3em;
 }
 
 .other_proj_title{
