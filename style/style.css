@@ -1,8 +1,96 @@
+.collapsible {
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures the text and icon are spaced apart */
+    outline: none;
+    font-size: 11pt;
+}
+
+.collapsible i {
+    transition: transform 0.2s ease-out;
+}
+
+.collapsible.active i {
+    transform: rotate(180deg); /* Rotates the icon to indicate expansion */
+}
+
+.collapsible-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+
+
+.introduction {
+    padding-bottom: 1em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.split-section {
+    display: flex;
+    padding-top: 3em;
+}
+
+.col-sm-4, .col-sm-8 {
+    padding: 15px;
+}
+
+.col-sm-4 {
+    background-color: #f9f9f9;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Adjusts spacing between cards */
+}
+
+.card {
+    background-color: white;
+    /* border-color: #777; */
+    box-shadow: 1px 1px 6px #d5d5d5;
+    /* border-width: 1px; */
+    border-radius: 20px;
+    overflow: clip;
+    width: 295px; /* calc(33.333% - 10px); Adjusts each card's width to fit 3 in a row, considering 20px total horizontal gap */
+    height: 300px;
+    margin-bottom: 20px; /* Adds space between rows */
+    margin-right: 10px;
+}
+
+.card-image {
+    padding-top: 1em;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+
+
 body {
     max-width: 1000px;
     margin: auto;
     color: #262421;
-    font-family: "Verdana";
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 a{
@@ -11,7 +99,7 @@ a{
 }
 
 p {
-    font-size: 9.5pt;
+    font-size: 11pt;
 }
 
 p.alt{
@@ -33,7 +121,7 @@ h2{
 
 h3{
     font-size: 1em;
-    font-variant: small-caps;
+    font-variant: Normal;
 }
 
 h5{
@@ -43,7 +131,7 @@ h5{
 
 hr.bottom_line {
     color: #edb264;
-    border: solid 0.65px !important;
+    border: dotted 1.3px !important;
     height: 0px !important;
     width: 30%;
 }
@@ -58,17 +146,19 @@ hr.div_line {
 
 .name{
     font-size: 1.2em;
-    font-family: "Verdana";
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .icon_row{
     padding-top: 1em;
-    padding-bottom: 0.5em;
+    padding-bottom: 2em;
 }
 
 .icon_list{
-    font-size: 9pt;
-    text-align: right;
+    font-size: 11pt;
+    text-align: left;
 }
 
 .linkto{
@@ -119,7 +209,7 @@ hr.div_line {
 .nav{
     font-size: 1em;
     width: 100%;
-    max-width: 1000px;
+    max-width: 975px;
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
@@ -146,6 +236,7 @@ a:hover, a.active{
 
 .news-row{
     padding-top: 1em;
+    text-align: left;
 }
 
 .project-row{
@@ -161,15 +252,20 @@ a:hover, a.active{
 
 .news-title{
     font-size: 1em;
-    color: gray;
+    color: #777;
     padding-left: 1em;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    border-top: dotted 2px #edb264;
 }
 
 .paper_section_title{
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    font-size: 9pt;
+    font-size: 0.9em;
     color: gray;
+    font-weight: 700;
 }
 
 #publication-list p{
