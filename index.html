@@ -19,27 +19,29 @@
 <div class="container">
 
 	<nav class="nav navbar-default">
-	<!--nav class="navbar"-->
-		<!--a class = "navbar-brand" href = "">REGINA CHENG</a-->
-		<a class="nav-link active" href="index.html" >HOME</a>
-		<a class="nav-link" href="publication.html">PUBLICATIONS</a>
-		<!--a class="nav-link" href="project.html">PROJECTS</a-->
-		<a class="nav-link" href="Ruijia_Cheng_cv_012623.pdf" target = "blank">CV</a>
-		<a class="nav-link" href="Ruijia_Cheng_UXR_resume.pdf" target = "blank">RESUME</a>
-		<!--a class="nav-link" href="fun.html">Fun FAQ</a-->
+		<a class="nav-link active" href="#top" >HOME</a>
+		<a class="nav-link" href="#projects" >PROJECTS</a>
+		<a class="nav-link" href="#publications">PUBLICATIONS</a>
 	</nav>
 
 
     <!-- <div class="row top-section"> -->
-	<div class="split-section">
-		<div class="col-sm-4 text-center">
+	<div class="split-section" id = "top">
+		<div class="left-side-container col-sm-3 text-center">
 			<img src="img/regina_profile.jpg" class="profile_img img-fluid">
-			<h5 class="name">Ruijia Cheng, Ph.D.</h5>
-			<h5 class="name">"Regina" 程瑞加 </h5>
-
-			<div class="text-center icon_row">
+			<div class = "name-container">
+				<h5 class="name">Ruijia Cheng, Ph.D.</h5>
+				<h5 class="name">"Regina" 程瑞加 </h5>
+			</div>
+			<div class = "name-container">
 				<h5 class="name">Human Centered AI Researcher</h5>
 			</div>
+
+			<div class="cv-buttons">
+				<a href="Ruijia_Cheng_cv_012623.pdf" target="_blank" class="btn btn-primary">CV</a>
+				<a href="Ruijia_Cheng_UXR_resume.pdf" target="_blank" class="btn btn-primary">Resume</a>
+			</div>
+			
 
 			<!--div class="text-center icon_row">
 				<h5 >HCI Researcher</h5>
@@ -396,7 +398,7 @@
 			</div>
 		</div>
 
-		<div class="col-sm-8">
+		<div class="right-side-container col-sm-9">
 			
 			<div class = "introduction">
 				<p>
@@ -409,7 +411,7 @@
 				</p>
 				
 				<p>
-					I received my PhD from the <a href="https://www.hcde.washington.edu/" class="linkto" target = "blank">Human Centered Design &amp Engineering</a> (HCDE) department at University of Washington (UW), mentored by <a href="https://mako.cc/" class="linkto" target = "blank">Dr. Benjamin Mako Hill</a> and <a href="https://unmad.in/" class="linkto" target = "blank">Dr. Sayamindu Dasgupta</a>. I was part of the <a href="https://wiki.communitydata.science/Main_Page" class="linkto" target = "blank">Community Data Science Collective</a> research group. I worked at the <a href="https://www.microsoft.com/en-us/research/group/developer-experience-lab/" class="linkto" target = "blank">Developer Experience Lab</a> at Microsoft Research, the Human AI Innovation team at Dataminr, and the UX team at Meta. 
+					I received my PhD from the <a href="https://www.hcde.washington.edu/" class="linkto" target = "blank">Human Centered Design &amp Engineering</a> (HCDE) department at University of Washington, where I was part of the <a href="https://wiki.communitydata.science/Main_Page" class="linkto" target = "blank">Community Data Science Collective</a> research group and mentored by <a href="https://mako.cc/" class="linkto" target = "blank">Dr. Benjamin Mako Hill</a> and <a href="https://unmad.in/" class="linkto" target = "blank">Dr. Sayamindu Dasgupta</a>. I have worked at the <a href="https://www.microsoft.com/en-us/research/group/developer-experience-lab/" class="linkto" target = "blank">Developer Experience Lab</a> at Microsoft Research, the Human AI Innovation team at Dataminr, and the UX team at Meta. 
 				</p>	
 				
 				<p>
@@ -434,221 +436,543 @@
 
 			<!-- <hr class = "div_line"/> -->
 
-			<h3 class = "news-title">Selected Projects</h3>
+			<div id = "projects">
+				<h3 class = "news-title">SELECTED PROJECTS</h3>
 
-			<div class = "paper_section_title"><b>Systems that Scaffold Programming and Creativity</b></div>
+				<div class = "paper_section_title"><b>Technical Systems for Programming and Creativity</b></div>
 
-			<div class = "card-container">
-				<div class="card">
-					<img src="img/paper_teaser/biscuit.png" alt="biscuit" class="card-image">
-					<div class="card-content">
-						<h3><a href="https://arxiv.org/abs/2404.07387"  class = "linkto" target = "blank">BISCUIT</a></h3>
-						<p>Scaffolding LLM-generated Code with
-							Ephemeral UIs in Computational Notebooks.</p>
-						<div class = "icon_list">
-							<a href="https://arxiv.org/abs/2404.07387"  class = "contacts" target = "blank">
-								<i class="fas fa-file-alt"></i>
-							</a>
+				<div class = "card-container">
+					<div class="card">
+						<img src="img/paper_teaser/biscuit.png" alt="biscuit" class="card-image">
+						<div class="card-content">
+							<h3><a href="https://arxiv.org/abs/2404.07387"  class = "linkto" target = "blank">BISCUIT</a></h3>
+							<p>Scaffolding LLM-generated Code with
+								Ephemeral UIs in Computational Notebooks.</p>
+							<div class = "icon_list">
+								<a href="https://arxiv.org/abs/2404.07387"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/paper_teaser/keyframer.png" alt="keyframer" class="card-image">
+						<div class="card-content">
+							<h3><a href="https://machinelearning.apple.com/research/keyframer"  class = "linkto" target = "blank">Keyframer</a></h3>
+							<p>Empowering Animation Design using Large Language Models.</p>
+							<div class = "icon_list">
+								<a href="https://arxiv.org/abs/2402.06071"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://mlr.cdn-apple.com/video/keyframer_preview_video_hb_ab789a1190.mp4" class="contacts" target = "blank">
+									<i class="fas fa-video"></i>
+								</a>
+								<a href="https://www.theverge.com/2024/2/14/24072917/apple-keyframer-ai-animation-tool-2d-images-text-descriptions" class = "contacts" target = "blank">
+									<i class="fas fa-comment-alt"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/paper_teaser/AXNav.png" alt="axnav" class="card-image">
+						<div class="card-content">
+							<h3><a href="https://machinelearning.apple.com/research/axnav" class = "linkto" target = "blank">AXNav</a></h3>
+							<p>Replaying Accessibility Tests from
+								Natural Language.</p>
+							<div class = "icon_list">
+								<a href="https://arxiv.org/abs/2310.02424"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://machinelearning.apple.com/research/axnav" class = "contacts" target = "blank">
+									<i class="fas fa-comment-alt"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/paper_teaser/dataland.png" alt="dataland" class="card-image">
+						<div class="card-content">
+							<h3><a href="https://dl.acm.org/doi/abs/10.1145/3585088.3589364"  class = "linkto" target = "blank">Dataland</a></h3>
+							<p>A visual block based programming system for computational data literacy.</p>
+							<div class = "icon_list">
+								<a href="https://dl.acm.org/doi/abs/10.1145/3585088.3589364"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://depts.washington.edu/ledlab/blog/2023/idc-23-dataland/" class = "contacts" target = "blank">
+									<i class="fas fa-comment-alt"></i>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="card">
-					<img src="img/paper_teaser/keyframer.png" alt="keyframer" class="card-image">
-					<div class="card-content">
-						<h3><a href="https://machinelearning.apple.com/research/keyframer"  class = "linkto" target = "blank">Keyframer</a></h3>
-						<p>Empowering Animation Design using Large Language Models.</p>
-						<div class = "icon_list">
-							<a href="https://arxiv.org/abs/2402.06071"  class = "contacts" target = "blank">
-								<i class="fas fa-file-alt"></i>
-							</a>
-							<a href="https://mlr.cdn-apple.com/video/keyframer_preview_video_hb_ab789a1190.mp4" class="contacts" target = "blank">
-								<i class="fas fa-video"></i>
-							</a>
-							<a href="https://www.theverge.com/2024/2/14/24072917/apple-keyframer-ai-animation-tool-2d-images-text-descriptions" class = "contacts" target = "blank">
-								<i class="fas fa-comment-alt"></i>
-							</a>
+				<div class = "paper_section_title"><b>Design Research on Human-AI Systems</b></div>
+				<div class = "card-container">
+					<div class="card">
+						<img src="img/paper_teaser/copilot_community.png" alt="Copilot Community" class="card-image">
+						<div class="card-content">
+							<h3><a href="https://arxiv.org/abs/2212.03491" class = "linkto" target = "blank">Code Generation AI User Community</a></h3>
+							<p>How Online Communities
+								Shape Software Developers' Trust in AI Code Generation Tools.</p>
+							<div class = "icon_list">
+								<a href="https://arxiv.org/abs/2212.03491" class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/paper_teaser/copilot_interface.png" alt="Image 1" class="card-image">
+						<div class="card-content">
+							<h3><a href="https://arxiv.org/abs/2305.11248"  class = "linkto" target = "blank">Interface Design for Developer Trust in Code Generation AI</a></h3>
+							<p>Investigating and Designing for Trust in AI-powered Code Generation Tools.</p>
+							<div class = "icon_list">
+								<a href="https://arxiv.org/abs/2305.11248"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/paper_teaser/naccl.png" alt="Image 1" class="card-image">
+						<div class="card-content">
+							<h3><a href="https://aclanthology.org/2022.naacl-main.33.pdf"  class = "linkto" target = "blank">Design Space for AI Text Summarization</a></h3>
+							<p>Mapping the Design Space of Human-AI Interaction in Text Summarization.</p>
+							<div class = "icon_list">
+								<a href="https://aclanthology.org/2022.naacl-main.33.pdf"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://twitter.com/ReginaRCheng/status/1544601404009984000?s=20&t=pWTpQTjWMogboIwLsJvmmg"  class="contacts" target = "blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="card">
-					<img src="img/paper_teaser/AXNav.png" alt="axnav" class="card-image">
-					<div class="card-content">
-						<h3><a href="https://machinelearning.apple.com/research/axnav" class = "linkto" target = "blank">AXNav</a></h3>
-						<p>Replaying Accessibility Tests from
-							Natural Language.</p>
-						<div class = "icon_list">
-							<a href="https://arxiv.org/abs/2310.02424"  class = "contacts" target = "blank">
-								<i class="fas fa-file-alt"></i>
-							</a>
-							<a href="https://machinelearning.apple.com/research/axnav" class = "contacts" target = "blank">
-								<i class="fas fa-comment-alt"></i>
-							</a>
-						</div>
-					</div>
-				</div>
+				<div class = "paper_section_title"><b>Empirical Studies about Informal Learning in Online Communities</b></div>
+				<div class = "card-container">
 
-				<div class="card">
-					<img src="img/paper_teaser/dataland.png" alt="dataland" class="card-image">
-					<div class="card-content">
-						<h3><a href="https://dl.acm.org/doi/abs/10.1145/3585088.3589364"  class = "linkto" target = "blank">Dataland</a></h3>
-						<p>A visual block based programming system for computational data literacy.</p>
-						<div class = "icon_list">
-							<a href="https://dl.acm.org/doi/abs/10.1145/3585088.3589364"  class = "contacts" target = "blank">
-								<i class="fas fa-file-alt"></i>
-							</a>
-							<a href="https://depts.washington.edu/ledlab/blog/2023/idc-23-dataland/" class = "contacts" target = "blank">
-								<i class="fas fa-comment-alt"></i>
-							</a>
+
+					<div class="card">
+						<img src="img/paper_teaser/scratch_variable.png" alt="Image 1" class="card-image">
+						<div class="card-content">
+							<p><a href="https://dl.acm.org/doi/abs/10.1145/3491102.3502124"  class = "linkto" target = "blank">How Interest-Driven Content Creation Shapes Opportunities for Informal Learning in Scratch: A Case Study on Novices' Use of Data Structures.</a></p>
+							<div class = "icon_list">
+								<a href="https://dl.acm.org/doi/abs/10.1145/3491102.3502124"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://blog.communitydata.science/how-does-interest-driven-participation-shape-computational-learning-in-online-communities/" class = "contacts" target = "blank">
+									<i class="fas fa-comment-alt"></i>
+								</a>
+								<a href="https://twitter.com/ReginaRCheng/status/1509576466618470404?s=20"  class="contacts" target = "blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="https://www.youtube.com/watch?v=8KCIA9-p_AE" class="contacts" target = "blank">
+									<i class="fas fa-video"></i>
+								</a>
+							</div>
 						</div>
 					</div>
+
+					<div class="card">
+						<img src="img/paper_teaser/scratch_LPP.png" alt="Image 1" class="card-image">
+						<div class="card-content">
+							<p><a href="https://dl.acm.org/doi/10.1145/3555106"  class = "linkto" target = "blank">Many Destinations, Many Pathways: A Quantitative Analysis of Legitimate Peripheral Participation in Scratch.</a></p>
+							<div class = "icon_list">
+								<a href="https://dl.acm.org/doi/10.1145/3555106"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://blog.communitydata.science/mapping-the-many-pathways-of-learning-in-online-communities/" class = "contacts" target = "blank">
+									<i class="fas fa-comment-alt"></i>
+								</a>
+								<a href="https://youtu.be/KHdP1LiMYM0" class="contacts" target = "blank">
+									<i class="fas fa-video"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/paper_teaser/kaggle.png" alt="Image 1" class="card-image">
+						<div class="card-content">
+							<p><a href="https://dl.acm.org/doi/10.1145/3415250"  class = "linkto" target = "blank">Building Community Knowledge in Online Data Science Competitions: Motivation, Practices and Challenges.</a></p>
+							<div class = "icon_list">
+								<a href="https://dl.acm.org/doi/10.1145/3415250"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://twitter.com/ReginaRCheng/status/1318388066839453697?s=20" class = "contacts" target = "blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="https://drive.google.com/file/d/1x1u9wjb3Oeg0IXGtreuNqOUXpr6dM812/view?usp=sharing"  class="contacts" target = "blank">
+									<i class="fas fa-video"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/paper_teaser/fanfiction.png" alt="Image 1" class="card-image">
+						<div class="card-content">
+							<p><a href="https://dl.acm.org/doi/abs/10.1145/3555127"  class = "linkto" target = "blank">Feedback Exchange and Online Affinity: A Case Study of Online Fanfiction Writers.</a></p>
+							<div class = "icon_list">
+								<a href="https://dl.acm.org/doi/abs/10.1145/3555127"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://twitter.com/ReginaRCheng/status/1592330745804361728?s=20&t=3_ZRTch7xvZhKH0s-h0cew"  class="contacts" target = "blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="https://drive.google.com/file/d/1S_PvGOHaVa0ZiaTxA6TFQ3DRk_b_gRla/view?usp=sharing" class="contacts" target = "blank">
+									<i class="fas fa-video"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="img/paper_teaser/critique_me.png" alt="Image 1" class="card-image">
+						<div class="card-content">
+							<p><a href="https://dl.acm.org/doi/10.1145/3415232" class = "linkto" target = "blank">Critique Me: Exploring How Creators Publicly Request Feedback in an Open Online Community.</a></p>
+							<div class = "icon_list">
+								<a href="https://dl.acm.org/doi/10.1145/3415232" class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://twitter.com/ReginaRCheng/status/1318339250023067649?s=20" class = "contacts" target = "blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="https://drive.google.com/file/d/1IbF09No1o47qPvag2mI-hqgwB5UhrPuZ/view?usp=sharing" class = "contacts" target = "blank">
+									<i class="fas fa-video"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
-			<div class = "paper_section_title"><b>Design Research on Developing AI Systems</b></div>
-			<div class = "card-container">
-				<div class="card">
-					<img src="img/paper_teaser/copilot_community.png" alt="Copilot Community" class="card-image">
-					<div class="card-content">
-						<h3><a href="https://arxiv.org/abs/2212.03491" class = "linkto" target = "blank">Code Generation AI User Community</a></h3>
-						<p>How Online Communities
-							Shape Software Developers' Trust in AI Code Generation Tools.</p>
-						<div class = "icon_list">
-							<a href="https://arxiv.org/abs/2212.03491" class = "contacts" target = "blank">
-								<i class="fas fa-file-alt"></i>
-							</a>
+			<div id = "publications">
+				<h3 class = "news-title">PUBLICATIONS</h3>
+				<div class = "paper_section">
+			
+					<div class='paper_section_title'><b>Peer Reviewed Publications</b></div>
+	
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								FAccT 2024
+							</p>
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								Ruotong Wang, <b>Ruijia Cheng</b>, Denae Ford, Thomas Zimmermann. Investigating and Designing for Trust in AI-powered Code Generation Tools.
+							</p>
+							<div class = "icon_list">
+								<a href="https://arxiv.org/abs/2305.11248"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="card">
-					<img src="img/paper_teaser/copilot_interface.png" alt="Image 1" class="card-image">
-					<div class="card-content">
-						<h3><a href="https://arxiv.org/abs/2305.11248"  class = "linkto" target = "blank">Interface Design for Developer Trust in Code Generation AI</a></h3>
-						<p>Investigating and Designing for Trust in AI-powered Code Generation Tools.</p>
-						<div class = "icon_list">
-							<a href="https://arxiv.org/abs/2305.11248"  class = "contacts" target = "blank">
-								<i class="fas fa-file-alt"></i>
-							</a>
+	
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								CHI 2024
+							</p>
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								Maryam Taeb, Amanda Swearngin, Eldon Schoop, <b>Ruijia Cheng</b>, Yue Jiang, Jeffrey Nichols. AXNav: Replaying Accessibility Tests from Natural Language. 2023. Accepted to the
+								the ACM Conference on Human Factors in Computing Systems (CHI 2024) 
+							</p>
+							<div class = "icon_list">
+								<a href="https://arxiv.org/abs/2310.02424"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="card">
-					<img src="img/paper_teaser/naccl.png" alt="Image 1" class="card-image">
-					<div class="card-content">
-						<h3><a href="https://aclanthology.org/2022.naacl-main.33.pdf"  class = "linkto" target = "blank">Design Space for AI Text Summarization</a></h3>
-						<p>Mapping the Design Space of Human-AI Interaction in Text Summarization.</p>
-						<div class = "icon_list">
-							<a href="https://aclanthology.org/2022.naacl-main.33.pdf"  class = "contacts" target = "blank">
-								<i class="fas fa-file-alt"></i>
-							</a>
-							<a href="https://twitter.com/ReginaRCheng/status/1544601404009984000?s=20&t=pWTpQTjWMogboIwLsJvmmg"  class="contacts" target = "blank">
-								<i class="fab fa-twitter"></i>
-							</a>
+	
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								Tiis 2024
+							</p>
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								<b>Ruijia Cheng</b>, Ruotong Wang, Thomas Zimmermann, Denae Ford. " It would work for me too": How Online Communities
+								Shape Software Developers' Trust in AI-Powered Code Generation Tools. 2024. Accepted to the ACM Transactions on Interactive Intelligent Systems.
+							</p>
+							<div class = "icon_list">
+								<a href="https://arxiv.org/abs/2212.03491" class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-
-			<div class = "paper_section_title"><b>Empirical Studies about Informal Learning in Online Communities</b></div>
-			<div class = "card-container">
-
-
-				<div class="card">
-					<img src="img/paper_teaser/scratch_variable.png" alt="Image 1" class="card-image">
-					<div class="card-content">
-						<p><a href="https://dl.acm.org/doi/abs/10.1145/3491102.3502124"  class = "linkto" target = "blank">How Interest-Driven Content Creation Shapes Opportunities for Informal Learning in Scratch: A Case Study on Novices' Use of Data Structures.</a></p>
-						<div class = "icon_list">
-							<a href="https://dl.acm.org/doi/abs/10.1145/3491102.3502124"  class = "contacts" target = "blank">
-								<i class="fas fa-file-alt"></i>
-							</a>
-							<a href="https://blog.communitydata.science/how-does-interest-driven-participation-shape-computational-learning-in-online-communities/" class = "contacts" target = "blank">
-								<i class="fas fa-comment-alt"></i>
-							</a>
-							<a href="https://twitter.com/ReginaRCheng/status/1509576466618470404?s=20"  class="contacts" target = "blank">
-								<i class="fab fa-twitter"></i>
-							</a>
-							<a href="https://www.youtube.com/watch?v=8KCIA9-p_AE" class="contacts" target = "blank">
-								<i class="fas fa-video"></i>
-							</a>
+	
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								IDC 2023
+							</p>
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								<b>Ruijia Cheng</b>, Aayushi Dangol, Frances Ello, Lingyu Wang, Sayamindu Dasgupta. Concepts, practices, and perspectives for developing
+								computational data literacy: Insights from workshops with a new data programming system. 2023. Accepted to the
+								ACM Interaction Design and Children Conference (IDC 2023) 
+							</p>
+							<div class = "icon_list">
+								<a href="https://dl.acm.org/doi/abs/10.1145/3585088.3589364"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://depts.washington.edu/ledlab/blog/2023/idc-23-dataland/" class = "contacts" target = "blank">
+									<i class="fas fa-comment-alt"></i>
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="card">
-					<img src="img/paper_teaser/scratch_LPP.png" alt="Image 1" class="card-image">
-					<div class="card-content">
-						<p><a href="https://dl.acm.org/doi/10.1145/3555106"  class = "linkto" target = "blank">Many Destinations, Many Pathways: A Quantitative Analysis of Legitimate Peripheral Participation in Scratch.</a></p>
-						<div class = "icon_list">
-							<a href="https://dl.acm.org/doi/10.1145/3555106"  class = "contacts" target = "blank">
-								<i class="fas fa-file-alt"></i>
-							</a>
-							<a href="https://blog.communitydata.science/mapping-the-many-pathways-of-learning-in-online-communities/" class = "contacts" target = "blank">
-								<i class="fas fa-comment-alt"></i>
-							</a>
-							<a href="https://youtu.be/KHdP1LiMYM0" class="contacts" target = "blank">
-								<i class="fas fa-video"></i>
-							</a>
+					
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								CHI 2022
+								<a href="pub/CHI2022-honorable-mention-certificate.pdf"  class="contacts" target = "blank">
+									<i class="fas fa-trophy"></i>
+								</a>
+							</p>
+			
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								<b>Ruijia Cheng</b>, Sayamindu Dasgupta, Benjamin Mako Hill. How Interest-Driven Content Creation Shapes Opportunities for Informal Learning in Scratch: A Case Study on Novices' Use of Data Structures. 2022. Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2022). 
+							</p>
+							<div class = "icon_list">
+								<a href="https://dl.acm.org/doi/abs/10.1145/3491102.3502124"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://blog.communitydata.science/how-does-interest-driven-participation-shape-computational-learning-in-online-communities/" class = "contacts" target = "blank">
+									<i class="fas fa-comment-alt"></i>
+								</a>
+								<a href="https://twitter.com/ReginaRCheng/status/1509576466618470404?s=20"  class="contacts" target = "blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="https://www.youtube.com/watch?v=8KCIA9-p_AE" class="contacts" target = "blank">
+									<i class="fas fa-video"></i>
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="card">
-					<img src="img/paper_teaser/kaggle.png" alt="Image 1" class="card-image">
-					<div class="card-content">
-						<p><a href="https://dl.acm.org/doi/10.1145/3415250"  class = "linkto" target = "blank">Building Community Knowledge in Online Data Science Competitions: Motivation, Practices and Challenges.</a></p>
-						<div class = "icon_list">
-							<a href="https://dl.acm.org/doi/10.1145/3415250"  class = "contacts" target = "blank">
-								<i class="fas fa-file-alt"></i>
-							</a>
-							<a href="https://twitter.com/ReginaRCheng/status/1318388066839453697?s=20" class = "contacts" target = "blank">
-								<i class="fab fa-twitter"></i>
-							</a>
-							<a href="https://drive.google.com/file/d/1x1u9wjb3Oeg0IXGtreuNqOUXpr6dM812/view?usp=sharing"  class="contacts" target = "blank">
-								<i class="fas fa-video"></i>
-							</a>
+	
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								CSCW 2022 
+							</p>
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								<b>Ruijia Cheng</b>, Benjamin Mako Hill. Many Destinations, Many Pathways: A Quantitative Analysis of Legitimate Peripheral Participation in Scratch. 2022. Accepted to the ACM Human Computer Interaction, Computer Supported Cooperative Work and Social Computing Conference (CSCW 2022). 
+							</p>
+							<div class = "icon_list">
+								<a href="https://dl.acm.org/doi/10.1145/3555106"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://blog.communitydata.science/mapping-the-many-pathways-of-learning-in-online-communities/" class = "contacts" target = "blank">
+									<i class="fas fa-comment-alt"></i>
+								</a>
+								<a href="https://youtu.be/KHdP1LiMYM0" class="contacts" target = "blank">
+									<i class="fas fa-video"></i>
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="card">
-					<img src="img/paper_teaser/fanfiction.png" alt="Image 1" class="card-image">
-					<div class="card-content">
-						<p><a href="https://dl.acm.org/doi/abs/10.1145/3555127"  class = "linkto" target = "blank">Feedback Exchange and Online Affinity: A Case Study of Online Fanfiction Writers.</a></p>
-						<div class = "icon_list">
-							<a href="https://dl.acm.org/doi/abs/10.1145/3555127"  class = "contacts" target = "blank">
-								<i class="fas fa-file-alt"></i>
-							</a>
-							<a href="https://twitter.com/ReginaRCheng/status/1592330745804361728?s=20&t=3_ZRTch7xvZhKH0s-h0cew"  class="contacts" target = "blank">
-								<i class="fab fa-twitter"></i>
-							</a>
-							<a href="https://drive.google.com/file/d/1S_PvGOHaVa0ZiaTxA6TFQ3DRk_b_gRla/view?usp=sharing" class="contacts" target = "blank">
-								<i class="fas fa-video"></i>
-							</a>
+					
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								CSCW 2022 
+							</p>
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								<b>Ruijia Cheng*</b>, Jenna Frens.* Feedback Exchange and Online Affinity: A Case Study of Online Fanfiction Writers. 2022. Accepted to the ACM Human Computer Interaction, Computer Supported Cooperative Work and Social Computing Conference (CSCW 2022).
+							</p>
+							<div class = "icon_list">
+								<a href="https://dl.acm.org/doi/abs/10.1145/3555127"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://twitter.com/ReginaRCheng/status/1592330745804361728?s=20&t=3_ZRTch7xvZhKH0s-h0cew"  class="contacts" target = "blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="https://drive.google.com/file/d/1S_PvGOHaVa0ZiaTxA6TFQ3DRk_b_gRla/view?usp=sharing" class="contacts" target = "blank">
+									<i class="fas fa-video"></i>
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="card">
-					<img src="img/paper_teaser/critique_me.png" alt="Image 1" class="card-image">
-					<div class="card-content">
-						<p><a href="https://dl.acm.org/doi/10.1145/3415232" class = "linkto" target = "blank">Critique Me: Exploring How Creators Publicly Request Feedback in an Open Online Community.</a></p>
-						<div class = "icon_list">
-							<a href="https://dl.acm.org/doi/10.1145/3415232" class = "contacts" target = "blank">
-								<i class="fas fa-file-alt"></i>
-							</a>
-							<a href="https://twitter.com/ReginaRCheng/status/1318339250023067649?s=20" class = "contacts" target = "blank">
-								<i class="fab fa-twitter"></i>
-							</a>
-							<a href="https://drive.google.com/file/d/1IbF09No1o47qPvag2mI-hqgwB5UhrPuZ/view?usp=sharing" class = "contacts" target = "blank">
-								<i class="fas fa-video"></i>
-							</a>
+	
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								NAACL 2022 
+							</p>
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								<b>Ruijia Cheng</b>, Alison Smith-Renner, Ke Zhang, Joel Tetreault, Alejandro Jaimes. Mapping the Design Space of Human-AI Interaction in Text Summarization. 2022. Accepted to the North American Chapter of the Association for Computational Linguistics Special Theme: Human-Centered Natural Language Processing (NAACL 2022).
+							</p>
+							<div class = "icon_list">
+								<a href="https://aclanthology.org/2022.naacl-main.33.pdf"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://twitter.com/ReginaRCheng/status/1544601404009984000?s=20&t=pWTpQTjWMogboIwLsJvmmg"  class="contacts" target = "blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</div>
 						</div>
 					</div>
+	
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								NAACL 2022 
+							</p>
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								Vivian Lai, Alison Smith-Renner, Ke Zhang, <b>Ruijia Cheng</b>, Wenjuan Zhang, Joel Tetreault, Alejandro Jaimes. An Exploration of Post-Editing Effectiveness in Text Summarization. 2022. Accepted to the North American Chapter of the Association for Computational Linguistics Special Theme: Human-Centered Natural Language Processing (NAACL 2022). 
+							</p>
+							<div class = "icon_list">
+								<a href="https://aclanthology.org/2022.naacl-main.35.pdf"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://twitter.com/vivwylai/status/1545412360835407872?s=20&t=F-9A87lOfyR3jx4XdApWAw"  class="contacts" target = "blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								CSCW 2020 
+							</p>
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								<b>Ruijia Cheng</b>, Mark Zachry. Building Community Knowledge in Online Data Science Competitions: Motivation, Practices and Challenges. 2020. Proceedings of the ACM Human Computer Interaction, Computer Supported Cooperative
+								Work and Social Computing (CSCW 2020).
+							</p>
+							<div class = "icon_list">
+								<a href="pub/rcheng_cscw2020_kaggle_final.pdf"  class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://twitter.com/ReginaRCheng/status/1318388066839453697?s=20" class = "contacts" target = "blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="https://drive.google.com/file/d/1x1u9wjb3Oeg0IXGtreuNqOUXpr6dM812/view?usp=sharing"  class="contacts" target = "blank">
+									<i class="fas fa-video"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								CSCW 2020 
+							</p>
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								<b>Ruijia Cheng</b>, Ziwen Zeng, Maysnow Liu, Steven Dow. Critique Me: Exploring How Creators Publicly Request Feedback in an Open Online Community. 2020. Proceedings of the ACM Human Computer Interaction, Computer Supported Cooperative Work and Social Computing (CSCW 2020).
+							</p>
+							<div class = "icon_list">
+								<a href="pub/rcheng_cscw2020_feedback_final.pdf" class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://twitter.com/ReginaRCheng/status/1318339250023067649?s=20" class = "contacts" target = "blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a href="https://drive.google.com/file/d/1IbF09No1o47qPvag2mI-hqgwB5UhrPuZ/view?usp=sharing" class = "contacts" target = "blank">
+									<i class="fas fa-video"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+			
 				</div>
-
+			
+				<div class="paper_section">
+			
+					<div class='paper_section_title'><b>Short Papers, Posters, and Workshop Papers</b></div>
+	
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								CHI 2022
+							</p>
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								<b>Ruijia Cheng</b>, Alison Smith-Renner, Ke Zhang, Joel Tetreault, Alejandro Jaimes. Trust and Reliance in Human-AI Collaborative Text Summarization. 2022. Workshop paper in the Trust and Reliance in Human-AI Teams workshop in the ACM Conference on Human Factors in Computing Systems (CHI 2022).
+							</p>
+							<div class = "icon_list">
+								<a href="https://chi-trait.github.io/papers/CHI_TRAIT_2022_Paper_24.pdf" class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+								<a href="https://drive.google.com/file/d/1_HADDaDzXhd8i005ZFLJRrfxGdiztM2V/view?usp=sharing" class = "contacts" target = "blank">
+									<i class="fas fa-video"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								GROUP 2018
+							</p>
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								<b>Ruijia Cheng</b>, Jan De Castro, Steven Dow, Joel Chan. 2018. An Exploratory Study of Problem Framing in Distributed Collaborative Design. Short paper in the ACM Group Conference (Group 2018). 
+							</p>
+							<div class = "icon_list">
+								<a href="pub/GROUP_2018.pdf" class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+	
+					<div class="row paper-row">
+						<div class="col-sm-2">
+							<p>
+								SfN 2016
+							</p>
+						</div>
+						<div class= "col-sm-10">
+							<p>
+								Fiza Singh, Amanda Smith, Nick Dudeck, Eduardo Herrera, Jade Lee, Zinong Yang, <b>Ruijia Cheng</b>, Jaime Pineda. 2016. A Pilot Study to Assess the Effects of EEG-Gamma Neurofeedback on Working Memory in Schizophrenia Patients. Poster in the Society for Neuroscience 2016 Annual Conference (SfN 2016).
+							</p>
+							<div class = "icon_list">
+								<a href="pub/sfn_2016.pdf" class = "contacts" target = "blank">
+									<i class="fas fa-file-alt"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>	
 			</div>
 			
 		</div>
@@ -683,5 +1007,41 @@
 			});
 		}
 	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const scrollLinks = document.querySelectorAll('a[href^="#"]');
+			for (let link of scrollLinks) {
+				link.addEventListener('click', function (event) {
+					event.preventDefault();
+					let targetId = this.getAttribute('href');
+					let targetSection = document.querySelector(targetId);
+					if (targetSection) {
+						targetSection.scrollIntoView({
+							behavior: 'smooth',
+							block: 'start'  // Aligns the top of the element with the top of the scrollable area
+						});
+					}
+				});
+			}
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const navLinks = document.querySelectorAll('.nav-link');
+		
+			navLinks.forEach(link => {
+				link.addEventListener('click', function() {
+					// Remove active class from all nav links
+					navLinks.forEach(node => node.classList.remove('active'));
+		
+					// Add active class to the clicked nav link
+					this.classList.add('active');
+				});
+			});
+		});
+	</script>
+		
+		
+		
 </body>
 </html>

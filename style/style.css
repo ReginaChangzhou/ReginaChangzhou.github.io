@@ -1,3 +1,52 @@
+.name-container {
+    text-align: center; 
+    padding-bottom: 20px; 
+}
+
+.cv-buttons {
+    text-align: center; 
+    padding: 20px; 
+}
+
+.btn {
+    padding-bottom: 10px 20px; 
+    text-decoration: none; 
+    color: white; 
+    background-color: #edb264; 
+    border-radius: 5px; 
+    border-color: #edb264;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;  
+    display: inline-block; 
+}
+
+.btn-primary { 
+    background-color: #edb264; 
+    width: 90px
+} 
+
+.btn-primary:hover {
+    background-color: #777; 
+    border-color: #777;
+}
+
+
+
+#projects, #publications {
+    padding-top: 25px; 
+    margin-top: -25px; 
+}
+
+.left-side-container, .right-side-container {
+    overflow-y: auto; /* Enables vertical scrolling */
+    height: 100%;
+}
+
+.right-side-container {
+    margin-left: 10px
+}
+
 .collapsible {
     color: white;
     cursor: pointer;
@@ -9,7 +58,7 @@
     align-items: center;
     justify-content: space-between; /* Ensures the text and icon are spaced apart */
     outline: none;
-    font-size: 11pt;
+    font-size: 12pt;
 }
 
 .collapsible i {
@@ -35,7 +84,7 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -44,11 +93,16 @@
     padding-top: 3em;
 }
 
-.col-sm-4, .col-sm-8 {
+.col-sm-2{
+    text-align: center;
+}
+
+
+.col-sm-4, .col-sm-8, .col-sm-3, .col-sm-9{
     padding: 15px;
 }
 
-.col-sm-4 {
+.col-sm-4, .col-sm-3 {
     background-color: #f9f9f9;
 }
 
@@ -66,7 +120,7 @@
     border-radius: 20px;
     overflow: clip;
     width: 295px; /* calc(33.333% - 10px); Adjusts each card's width to fit 3 in a row, considering 20px total horizontal gap */
-    height: 300px;
+    height: 310px;
     margin-bottom: 20px; /* Adds space between rows */
     margin-right: 10px;
 }
@@ -85,8 +139,8 @@
 
 
 body {
-    max-width: 1000px;
-    margin: auto;
+    max-width: 100%;
+    margin: 0 5%;
     color: #262421;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -99,7 +153,7 @@ a{
 }
 
 p {
-    font-size: 11pt;
+    font-size: 12pt;
 }
 
 p.alt{
@@ -157,7 +211,7 @@ hr.div_line {
 }
 
 .icon_list{
-    font-size: 11pt;
+    font-size: 12pt;
     text-align: left;
 }
 
@@ -165,6 +219,7 @@ hr.div_line {
     color: gray;
     text-decoration: underline;
     text-decoration-style: dotted;
+    text-decoration-thickness: 1.3px;
     text-decoration-color: #edb264; 
 }
 
@@ -208,8 +263,7 @@ hr.div_line {
 
 .nav{
     font-size: 1em;
-    width: 100%;
-    max-width: 975px;
+    width: 90%;
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
@@ -258,10 +312,11 @@ a:hover, a.active{
     padding: 10px;
     width: 100%;
     border-top: dotted 2px #edb264;
+    margin-top: 1.5em;
 }
 
 .paper_section_title{
-    margin-top: 0.5em;
+    margin-top: 1em;
     margin-bottom: 0.5em;
     font-size: 0.9em;
     color: gray;
