@@ -44,7 +44,7 @@
 }
 
 .right-side-container {
-    margin-left: 10px
+    margin-left: 1%
 }
 
 .collapsible {
@@ -139,8 +139,8 @@
 
 
 body {
-    max-width: 100%;
-    margin: 0 5%;
+    max-width: 90%;
+    margin: 0 auto;
     color: #262421;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
