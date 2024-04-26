@@ -38,9 +38,8 @@
     margin-top: -25px; 
 }
 
-.left-side-container, .right-side-container {
-    overflow-y: auto; /* Enables vertical scrolling */
-    height: 100%;
+.left-side-container{
+   height: 100%
 }
 
 .right-side-container {
